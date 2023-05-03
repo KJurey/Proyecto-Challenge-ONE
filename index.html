@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>De/Encryption Device</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <script src="code.js"></script>
+      <div class="container">
+        <img src="Logo Icon (1080 × 1080 px).png" alt="Logo Icon" class="Icon">
+        <textarea id="textarea" class="maintext" name="text" placeholder="Ingresa el texto aqui" onchange="textareachange()"></textarea>
+        <div class="divencription">
+          <p id="p-encription-box" class="p-encription-box"></p>
+          <div id="initial-div-box" class="div-encription-box">
+            <img src="Search Icon.png" alt="Search Icon" class="Icon-Search">
+            <p class="initial-div-box-m1">Ningún mensaje fue encontrado</p>
+            <p class="initial-div-box-m2">Ingresa el texto que desees encriptar o desencriptar.<br><br><strong><small><em>(Recuerda solo usar letras minúsculas y sin acentos)</em></small></strong></p>
+          </div>
+          <div id="initial-div-box-button">
+            <button type="button" value="Copiar Texto" class="CopyText" id="CopyText-Button" onclick="CopyText()">Copiar</button>
+          </div>
+        </div> 
+        <div>
+          <button type="submit" value="Encriptar" class="boton-encripta" id="Encrypt-Button" onclick="Encriptar()">Encriptar
+          </button>
+          <button type="submit" value="Desencriptar" class="boton-desencripta" id="Decrypt-Button" onclick="Desencriptar()">Desencriptar
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="copyright">© Copyright Kevin Juarez Reynoso - 2023</p>
+    </footer>
+  </body>
+</html>
